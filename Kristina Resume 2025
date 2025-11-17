@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kristina Vurmo — Resume</title>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+                   Arial, "Noto Sans", "Liberation Sans", sans-serif;
+      line-height: 1.45;
+      color: #1a1a1a;
+      background-color: #f3f5f7;
+      padding: 2rem 1rem;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .cv-wrap {
+      max-width: 920px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 2rem 2.25rem;
+      border-radius: 8px;
+      box-shadow: 0 6px 18px rgba(19, 24, 31, 0.06);
+      color: #111111;
+    }
+
+    header { display: flex; flex-direction: column; gap: .5rem; margin-bottom: 1.25rem; }
+
+    .name { display: flex; align-items: baseline; gap: 1rem; flex-wrap: wrap; }
+    h1 {
+      font-size: 1.9rem;
+      margin: 0;
+      line-height: 1;
+      letter-spacing: -0.02em;
+    }
+    .tagline {
+      color: #2c6f86;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .75rem 1.25rem;
+      font-size: .95rem;
+      color: #334155;
+    }
+    .contact a { color: inherit; text-decoration: none; }
+    .contact a:hover { text-decoration: underline; }
+
+    main { display: block; }
+    section { margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid #e6eef3; }
+
+    h2 {
+      font-size: 1.05rem;
+      margin: 0 0 .5rem 0;
+      color: #08263a;
+      letter-spacing: 0.01em;
+      padding-bottom: .25rem;
+    }
+
+    .item { margin-bottom: 1rem; }
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .item-title {
+      font-weight: 700;
+      font-size: 1rem;
+      margin: 0;
+    }
+    .item-meta { font-size: .92rem; color: #475569; }
+
+    ul { margin: .5rem 0 0 1.1rem; padding: 0; }
+    li { margin-bottom: .45rem; }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .skill-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: .35rem;
+    }
+    .skill-list li::before { content: "• "; color: #2c6f86; font-weight: 700; }
+
+    footer {
+      margin-top: 1.5rem;
+      font-size: .85rem;
+      color: #6b7280;
+      border-top: 1px dashed #e6eef3;
+      padding-top: .75rem;
+    }
+
+    @media (max-width: 720px) {
+      .cv-wrap { padding: 1.25rem; }
+      h1 { font-size: 1.6rem; }
+      .two-col { grid-template-columns: 1fr; }
+    }
+
+    @media print {
+      body { background: white; padding: 0; }
+      .cv-wrap { box-shadow: none; border-radius: 0; margin: 0; padding: 0.6in; }
+      a::after { content: " (" attr(href) ")"; font-size: .85em; color: #000; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="cv-wrap" role="document" aria-label="Resume of Kristina Vurmo">
+    <header>
+      <div class="name">
+        <h1>Kristina Vurmo</h1>
+        <div class="tagline">Master's Student — Business Analytics • Marketing background</div>
+      </div>
+
+      <div class="contact">
+        <div><a href="mailto:Kvurmo1@gmail.com">Kvurmo1@gmail.com</a></div>
+        <div><a href="tel:+16172300048">(617) 230-0048</a></div>
+        <div><a href="https://www.linkedin.com/in/kristina-vurmo-707229228" target="_blank" rel="noopener">LinkedIn: kristina-vurmo-707229228</a></div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2>Education</h2>
+
+        <div class="item">
+          <div class="item-header">
+            <div>
+              <div class="item-title">Suffolk University — Master of Science in Business Analytics</div>
+              <div class="item-meta">Boston, MA — Class of 2026</div>
+            </div>
+          </div>
+          <p style="margin: .4rem 0 0 0;">Graduate student in Business Analytics. (Expected completion: 2026)</p>
+        </div>
+
+        <div class="item">
+          <div class="item-header">
+            <div>
+              <div class="item-title">Suffolk University — Bachelor of Science in Marketing</div>
+              <div class="item-meta">Boston, MA — Class of 2025 · Honors Business School · Finance Minor</div>
+            </div>
+            <div class="item-meta">GPA: 3.8</div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Professional Experience</h2>
+
+        <div class="item">
+          <div class="item-header">
+            <div>
+              <div class="item-title">Lead Wellness Tech, Marketer — Restore Hyper Wellness</div>
+              <div class="item-meta">Newton, MA</div>
+            </div>
+            <div class="item-meta">September 2024 – Present</div>
+          </div>
+          <ul>
+            <li>Manage and update accounts for a client base of 300+, ensuring accurate billing and payment processing.</li>
+            <li>Serve as the primary wellness tech to facilitate communication between technicians and management.</li>
+            <li>Process 20+ transactions per shift with accuracy, ensuring smooth operations.</li>
+            <li>Develop and implement marketing materials that increase client engagement.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <div class="item-header">
+            <div>
+              <div class="item-title">Guest Experience Specialist — V/O Med Spa</div>
+              <div class="item-meta">Westwood, MA</div>
+            </div>
+            <div class="item-meta">May 2024 – August 2024</div>
+          </div>
+          <ul>
+            <li>Scheduled and coordinated 30–40 appointments daily while managing provider calendars.</li>
+            <li>Processed client payments averaging $3,000+ in daily revenue with no discrepancies.</li>
+            <li>Maintained HIPAA-compliant records for over 500 active clients.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <div class="item-header">
+            <div>
+              <div class="item-title">Host / Server — Yardhouse</div>
+              <div class="item-meta">Dedham, MA</div>
+            </div>
+            <div class="item-meta">September 2022 – June 2024</div>
+          </div>
+          <ul>
+            <li>Handled 50+ guest interactions per shift, managing table service and transactions.</li>
+            <li>Provided prompt, friendly service in a high-volume environment.</li>
+            <li>Coordinated seating assignments and waitlists to optimize efficiency.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <div class="item-header">
+            <div>
+              <div class="item-title">Real Estate Intern — Kenmore Properties</div>
+              <div class="item-meta">Boston, MA</div>
+            </div>
+            <div class="item-meta">March 2022 – July 2022</div>
+          </div>
+          <ul>
+            <li>Updated and maintained 100+ property listings for the sales team.</li>
+            <li>Prepared lease documents for 20+ clients monthly and organized financial paperwork.</li>
+            <li>Assisted with property showings and securely managed client records.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <div class="item-header">
+            <div>
+              <div class="item-title">Sales Associate — Old Navy</div>
+              <div class="item-meta">Dedham, MA</div>
+            </div>
+            <div class="item-meta">April 2020 – December 2021</div>
+          </div>
+          <ul>
+            <li>Processed $5,000+ in daily transactions and balanced cash drawers with zero discrepancies.</li>
+            <li>Set up and maintained merchandising displays for seasonal promotions.</li>
+            <li>Assisted 50+ customers daily and recommended products to meet sales goals.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Skills & Certifications</h2>
+
+        <div class="two-col">
+          <div>
+            <h3 style="font-size:.95rem; margin:0 0 .25rem 0;">Individual Skills</h3>
+            <ul class="skill-list">
+              <li>Customer service</li>
+              <li>Administrative support</li>
+              <li>Organized & detail-oriented</li>
+              <li>Hardworking & responsible</li>
+              <li>Multitasking</li>
+              <li>Interpersonal communication</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 style="font-size:.95rem; margin:0 0 .25rem 0;">Technical / Tools</h3>
+            <ul class="skill-list">
+              <li>Microsoft Office</li>
+              <li>Google Workspace</li>
+              <li>Point-of-Sale systems</li>
+              <li>R (coding)</li>
+            </ul>
+
+            <h3 style="font-size:.95rem; margin:.7rem 0 .25rem 0;">Certifications</h3>
+            <ul class="skill-list">
+              <li>Bloomberg Certified</li>
+              <li>Google Analytics Certified</li>
+              <li>HubSpot Inbound Certified</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section style="border-top:1px dashed #e6eef3;">
+        <h2>Role Highlights</h2>
+        <p style="margin:.35rem 0 0 0;">Lead Wellness Tech · Marketer · Guest Experience Specialist · Host/Server · Real Estate Intern · Sales Associate</p>
+      </section>
+
+      <footer>
+        <div>Resume prepared by Kristina Vurmo — based on original CV content.</div>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
